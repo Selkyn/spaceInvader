@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 1500px;
+    height: 900px;
+    margin: auto;
+    border: 5px solid blueviolet;
+    background-image: url(images/fondetoile.gif);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    /* align-items: center; */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#vilain-div {
+    /* height: 1400px; */
+    /* border: 2px solid blue; */
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 4;
+    visibility: visible;
+}
+#my-ship-div {
+    width: 90%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    /* border: 3px solid red; */
+}
+#my-ship {
+    width: 100px;
+    position: relative;
+}
+
+.vilain-img {
+    width: 100px;
+}
+
+#shoot {
+    /* font-size: 30px; */
+    width: 5px;
+    height: 8px;
+    background-color: red;
+    position: absolute;
+    z-index: 4;
+    color: red;
+    right: 500px;
+    transform: translateY(-400%);
+}
+
+.shoot-vilain {
+    width: 5px;
+    height: 8px;
+    background-color: green;
+    position: absolute;
+    z-index: 8;
+    color: green;
+}
+
+.killed {
+    visibility: hidden;
+}
